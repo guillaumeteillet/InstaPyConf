@@ -15,7 +15,9 @@ $security_code = str_replace(' ', '', $security_code);
 
 echo $security_code;
 
-$fp2 = fopen("debug.txt", "w+");
-fwrite($fp2, $security_code."\n");
+$json_file = array('challenge' => array('security_code' => $security_code));
+
+$fp2 = fopen("/home/ubuntu/InstaPy/logs/guillaumeteillet/state.json", "w+");
+fwrite($fp2, json_encode($json_file));
 fclose($fp2);
 ?>
