@@ -2,7 +2,7 @@
 
 $fp=fopen("real.txt", "w+");
 fwrite($fp, print_r($_POST, true));
-fclose(fp);
+fclose($fp);
 
 $arr = array('text' => 'Use 603 218 to verify your Instagram account.');
 
@@ -16,7 +16,7 @@ $security_code = $_GET['securitycode'];
 
 echo $security_code;
 
-$fp2 = fopen("/home/ubuntu/InstaPy/logs/guillaumeteillet/securitycode.json", "w+");
+$fp2 = fopen("securitycode.json", "w+");
 fwrite($fp2, $security_code);
 fclose($fp2);
 ?>
