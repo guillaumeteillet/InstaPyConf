@@ -16,9 +16,7 @@ $security_code = $_GET['securitycode'];
 
 echo $security_code;
 
-$json_file = array('challenge' => array('security_code' => $security_code));
-
 $fp2 = fopen("/home/ubuntu/InstaPy/logs/guillaumeteillet/securitycode.json", "w+");
-fwrite($fp2, json_encode($json_file));
+fwrite($fp2, $security_code);
 fclose($fp2);
 ?>
