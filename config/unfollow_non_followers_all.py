@@ -20,4 +20,4 @@ with smart_run(session):
     #  Per hour : 20 unfollow / follow
     #  Per day : 200 unfollow / follow
 
-    session.unfollow_users(amount=10, allFollowing=True, style="RANDOM", unfollow_after=None, sleep_delay=600)
+    session.unfollow_users(amount=10, nonFollowers=True, style="RANDOM", unfollow_after=None, sleep_delay=600)
