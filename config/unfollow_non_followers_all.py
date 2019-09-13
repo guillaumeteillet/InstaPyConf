@@ -15,9 +15,9 @@ session = InstaPy(headless_browser=True,
 
 with smart_run(session):
 
-    # This command will unfollow all non-followers and will sleep 1 hour every 10 unfollow.
+    # This command will unfollow all non-followers and will sleep 1 hour every 16 unfollow.
     #! Insta Limit :
     #  Per hour : 20 unfollow / follow
     #  Per day : 200 unfollow / follow
 
-    session.unfollow_users(amount=10, nonFollowers=True, style="RANDOM", unfollow_after=None, sleep_delay=600)
+    session.unfollow_users(amount=16, nonFollowers=True, style="RANDOM", unfollow_after=None, sleep_delay=600)
