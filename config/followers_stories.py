@@ -17,11 +17,7 @@ session = InstaPy(headless_browser=True,
 with smart_run(session):
 
     UserList = [
-        "cedricannicette", "entrepreneursfr", 'alexandre.lahouel', 'franckmaessmart',
-        "antoinebm", "professor.enzo", "fouqueflorent", "deslivrespoursenrichirofficiel",
-        "carrement_libre", "kimbennour", "kevin_marieqlrr", "jesuismonpatron.fr",
-        "mickaelzonta", "xolali_zigah", "mason.mnd", "manuelravier", "sebastienascon",
-        "alechy", "jean.laplace", "vincent.d.robert", "grosargentofficiel"
+        "foodnetwork", "foodandwine", "thisisinsiderfood"
     ]
     User = random.choice(UserList)
 
